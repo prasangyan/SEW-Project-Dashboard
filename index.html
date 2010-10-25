@@ -24,7 +24,7 @@
 			<ul>
 				<li class="current"><a href="#">Dashboard</a></li>
 				<li><a href="#">Projects</a></li>
-				<li><a href="#">Issues</a></li>
+				<li><a href="IssueList.html">Issues</a></li>
 				<li><a href="#">Materials</a></li>
 				<li><a href="#">Users</a></li>
 			</ul>	
@@ -35,22 +35,15 @@
 			
 			<h1>Dashboard</h1>
 			
-			<h2>Group title goes here <span>(short description)</span></h2>
+			<h2>Cost Vs Schedule</h2>
 			<div class="inner-box clearfix">
 			
-				<div id="sidebar">
+				<div class="sidebar">
 				
-					<ul>
-						<li class="head">Sidebar title</li>
-						<li><a href="#">Menu item 1</a></li>
-						<li><a href="#">Menu item 2</a></li>
-						<li class="current"><a href="index-2.html">Form template layout</a></li>
-						<li><a href="table.html">Table template layout</a></li>
-						<li><a href="#">Menu item 5</a></li>
-						<li><a href="#">Menu item 6</a></li>
-						<li><a href="#">Menu item 7</a></li>
-						<li><a href="#">Menu item 8</a></li>
-					</ul>				
+					<div class="sidebar-content">
+						<h5>Sample sidebar Heading</h5>
+						Need to decide what goes here. Hopefully it is something real fancy
+					</div>				
 				
 				</div>
 			
@@ -78,8 +71,46 @@
 				</div>
 			
 			</div>
-
 			
+			<h2>Project Summary</h2>
+
+			<div class="inner-box clearfix">
+			
+				<div class="sidebar">
+				
+					<div class="sidebar-content">
+					
+						<h5>Sample sidebar Heading</h5>
+						Need to decide what goes here. Hopefully it is something real fancy
+						
+					</div>
+					
+				</div>
+			
+				<div id="form-block">
+				
+					<label for="field_1">Name for this form field (short)</label>
+					<input type="text" name="txtField1" id="field_1" class="short" />
+					
+					
+					<label for="field_2">Name for this form field (medium)</label>
+					<input type="text" name="txtField2" id="field_2" class="medium" />
+					<em>Help instructions for each form section goes below input field</em>
+					
+					<label for="field_3">Name for this form field (default)</label>
+					<input type="text" name="txtField3" id="field_3" />
+					<em>Help instructions for each form section goes below input field</em>
+					
+					<label for="field_4">Name for this form field</label>
+					<textarea name="txtField4" rows="3" cols="3" id="field_4"></textarea>
+					<em>Help instructions for each form section goes below input field</em>
+					
+					<input type="button" class="submit" value="Submit form" onclick="location.href='form_success.html';" />
+					<input type="button" class="submit reset" value="Reset form" onclick="location.href='form_error.html';" />
+				
+				</div>
+			
+			</div>
 			
 				
 		</div><!-- end page-content -->

@@ -74,7 +74,8 @@ HTML[xmlns] .clearfix
 ------------------------------------------------------*/
 #page-container
 {
-	min-width: 960px;
+	margin: 0 auto;
+	width: 960px;
 }
 /*page-navigation
 ------------------------------------------------------*/
@@ -125,7 +126,14 @@ HTML[xmlns] .clearfix
 	color: #33393C;
 	margin: 0px 0px 10px;
 	padding: 0px 0px 1px;
-	border-bottom: 1px solid #33393C;
+	/*[disabled]border-bottom:1px solid #33393C;*/
+}
+#page-content H1 SPAN
+{
+	font: italic bold 0.5em Georgia, "Times New Roman", Times, serif;
+	color: #33393C;
+	margin: 0px 0px 10px 6px;
+	position: absolute;
 }
 #page-content H2
 {
@@ -150,7 +158,7 @@ HTML[xmlns] .clearfix
 #page-content H3 A
 {
 	font: bold 1em Arial, Tahoma, sans-serif;
-	color: #0099FF;
+	color: #006CC6;
 	text-decoration: none;
 }
 #page-content .inner-box
@@ -179,7 +187,7 @@ HTML[xmlns] .clearfix
 	padding: 5px;
 	display: block;
 	border: 1px solid #CCCCCC;
-	width: 98%;
+	width: 90%;
 }
 #page-content TEXTAREA
 {
@@ -189,10 +197,11 @@ HTML[xmlns] .clearfix
 #page-content INPUT:focus, #page-content TEXTAREA:focus
 {
 	border: 1px solid #454545;
+	background: #FFFFD4;
 }
 #page-content INPUT.submit
 {
-	background-color: #0099FF;
+	background-color: #006CC6;
 	display: block;
 	float: left;
 	width: 140px;
@@ -257,7 +266,7 @@ HTML[xmlns] .clearfix
 #table-block
 {
 	position: relative;
-	margin-right: 270px;
+	margin-right: 310px;
 }
 #table-block TABLE
 {
@@ -299,7 +308,7 @@ HTML[xmlns] .clearfix
 #table-block TABLE TD.actions A
 {
 	font: bold 0.9em Arial, Tahoma, sans-serif;
-	color: #0099FF;
+	color: #006CC6;
 	text-decoration: none;
 	padding: 0px 2px;
 	text-transform: uppercase;
@@ -312,54 +321,186 @@ HTML[xmlns] .clearfix
 {
 	color: #FF9000;
 }
-/*Sidebar
+/*Project Data Table
 ------------------------------------------------------*/
-#sidebar
+#table-full
 {
 	position: relative;
-	width: 240px;
-	float: right;
 }
-#sidebar UL
+#table-full TABLE
 {
-	margin: 0px;
-	padding: 0px 0px 100px;
-	list-style: none;
-	border-left: 1px solid #CDCDCD;
+	width: 99%;
+	position: relative;
 }
-#sidebar UL LI.head
+#table-full TABLE TR TD
 {
-	font: bold 1.4em Arial, Tahoma, sans-serif;
-	color: #0099FF;
-	text-transform: uppercase;
-	padding: 15px 0px 15px 15px;
-}
-#sidebar UL LI
-{
+	padding: 5px 6px;
 	border-bottom: 1px solid #CDCDCD;
 }
-#sidebar UL LI A
+#table-full TABLE TR.header TD
 {
-	background-color: #F2F2E8;
-	display: block;
-	font: normal 1.2em Arial, Tahoma, sans-serif;
-	color: #33393C;
+	font: bold 1.1em Arial, Tahoma, sans-serif;
+	color: #FFF;
+	padding: 7px 6px;
+	background-color: #4A5154;
+}
+#table-full TABLE TR.alternate
+{
+	background-color: #F5F5ED;
+}
+#table-full TABLE TD.true
+{
+	color: #009933;
+}
+#table-full TABLE TD.false
+{
+	color: #990000;
+}
+#table-full TABLE TD.actions
+{
+	color: #CCC;
+}
+#table-full TABLE TR:hover
+{
+	background-color: #FFFFD4;
+}
+#table-full TABLE TD.actions A
+{
+	font: bold 0.9em Arial, Tahoma, sans-serif;
+	color: #006CC6;
 	text-decoration: none;
-	padding: 8px 10px 8px 15px;
-	height: 1%;
+	padding: 0px 2px;
+	text-transform: uppercase;
 }
-#sidebar UL LI A:hover
+#table-full TABLE TD.actions A.delete
 {
-	background-color: #E6E6D2;
+	color: #999;
 }
-#sidebar UL LI.current A
+#table-full TABLE TD.actions A:hover
 {
-	background-color: #FFF;
+	color: #FF9000;
+}
+#table-full TABLE TD.new
+{
+	border: none;
+}
+#table-full TABLE TR.new-item:hover
+{
+	background: #FFFFFF;
+}
+#table-full TD.new:hover
+{
+	background: none;
+}
+#table-full TD.new A
+{
+	color: #006CC6;
+	text-decoration: none;
+	font-weight: bold;
+}
+#table-full TD.new A:hover
+{
+	color: #FF9000;
+}
+#table-full TD.submit
+{
+	border: none;
+	background: #F4F4EC;
+}
+#table-full TD.submit A
+{
+	font: bold 0.9em Arial, Tahoma, sans-serif;
+	color: #727272;
+	text-decoration: none;
+	padding: 0px 2px;
+	text-transform: uppercase;
+}
+#table-full TD.submit A:hover
+{
+	font: bold 0.9em Arial, Tahoma, sans-serif;
+	color: #FF9000;
+	text-decoration: none;
+	padding: 0px 2px;
+	text-transform: uppercase;
+}
+/*Table entry form
+------------------------------------------------------*/
+#table-full TABLE TD.data-entry
+{
+	border: none;
+	background: #F5F5ED;
+}
+#table-full TD.data-entry:hover
+{
+	background: #F5F5ED;
+}
+#table-full TD.new A
+{
+	color: #006CC6;
+	text-decoration: none;
+	font-weight: bold;
+}
+#table-full TD.new A:hover
+{
+	color: #FF9000;
+}
+/*Project Select
+------------------------------------------------------*/
+.project-select
+{
+	background: #FFFFFF;
+	position: absolute;
+	margin: -9px 0 0 136px;
+	padding: 12px 12px 12px 15px;
+	z-index: 1;
+	border: 1px solid #9EA8AD;
+}
+.project-select UL
+{
+	list-style: none;
+}
+.project-select LI
+{
+	padding: 0px 0px 10px;
+}
+.project-select A
+{
+	color: #006CC6;
+	text-decoration: none;
+	font-weight: bold;
+}
+.project-select A:hover
+{
+	color: #FF9000;
+}
+#page-content .project-select H2.switch-project-title
+{
+	background: #FFFFFF;
 	font: bold 1.2em Arial, Tahoma, sans-serif;
-	color: #33393C;
-	text-decoration: none;
-	padding: 8px 10px 8px 16px;
-	margin-left: -1px;
+	color: #444;
+	margin: 0px 0px 6px;
+	padding: 0 0 4px;
+	border-bottom: 1px solid #D1D1D1;
+}
+/*Sidebar
+------------------------------------------------------*/
+.sidebar
+{
+	position: relative;
+	width: 300px;
+	float: right;
+	padding: 0;
+	border-left: 1px solid #CBCBCB;
+}
+.sidebar .sidebar-content
+{
+	padding: 0 10px;
+}
+.sidebar .sidebar-content H5
+{
+	font: bold 1.4em Arial, Tahoma, sans-serif;
+	color: #454545;
+	text-transform: uppercase;
 }
 /*page-footer
 ------------------------------------------------------*/
