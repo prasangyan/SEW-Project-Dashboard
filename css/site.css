@@ -1,0 +1,20 @@
+/*Type styling*/
+BODY
+{
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+H1
+{
+	font-size: 1.6em;
+}
+/*Container*/
+.container
+{
+	margin: 0 auto;
+	width: 960px;
+	-moz-box-shadow: 0px 3px 4px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+	box-shadow: 0px 3px 4px rgba(0,0,0,.2);
+}
