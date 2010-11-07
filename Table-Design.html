@@ -18,54 +18,90 @@
 
 <body>
 	<div class="container">
-		<div class="">
-			<table class="data">
-				<tr>
-					<th class="left">Month</th>
-					<th class="middle">
-						Original Baseline Plan
-						<p class="title-subtext">In Crores</p>
-					</th>
-					<th class="middle">
-						LRE Site
-						<p class="title-subtext">In Crores</p>
-					</th>
-					<th class="middle">
-						LRE PMC
-						<p class="title-subtext">In Crores</p>
-					</th>
-					<th class="middle">
-						AC
-						<p class="title-subtext">In Crores</p>
-					</th>
-					<th class="right">% Progress</th>
-				</tr>
-				<tr>
-					<td><a href="#">Jan 2010</a></td>
-					<td>56</td>
-					<td>87</td>
-					<td>67</td>
-					<td>88</td>
-					<td>88</td>
-				</tr>
-				<tr class="odd">
-					<td><a href="#">Feb 2010</a></td>
-					<td>34</td>
-					<td>45</td>
-					<td>343</td>
-					<td>343</td>
-					<td>88</td>
-				</tr>
-				<tr>
-					<td><a href="#">Mar 2010</a></td>
-					<td>34</td>
-					<td>343</td>
-					<td>343</td>
-					<td>343</td>
-					<td>88</td>
-				</tr>
-			</table>
-		</div>
+		<table class="data">
+			<tr>
+				<th class="left">Month</th>
+				<th class="middle">
+					Original Baseline Plan
+					<p class="title-subtext">In Crores</p>
+				</th>
+				<th>
+					LRE Site
+					<p class="title-subtext">In Crores</p>
+				</th>
+				<th>
+					LRE PMC
+					<p class="title-subtext">In Crores</p>
+				</th>
+				<th>
+					AC
+					<p class="title-subtext">In Crores</p>
+				</th>
+				<th class="right">% Progress</th>
+			</tr>
+			<!--
+			<tr>
+				<td><a href="#">Jan 2010</a></td>
+				<td>56</td>
+				<td>87</td>
+				<td>67</td>
+				<td>88</td>
+				<td>88</td>
+			</tr>
+			-->
+			<tr>
+				<td colspan="6">
+					<div class="data-entry-form">
+						<ol>
+							<li>
+								<label for="field_1">Month</label>
+								<input type="text" name="txtField1" id="field_1" class="month-textfield" />
+							</li>
+								<label for="field_2">Year</label>
+								<input type="text" name="txtField2" id="field_2" class="year-textfield" />
+							<li>					
+								<label for="field_2">Original Baseline Plan</label>
+								<input type="text" name="txtField2" id="field_2" class="normal-textfield" />
+							</li>
+								<label for="field_2">Planned Value</label>
+								<input type="text" name="txtField2" id="field_2" class="normal-textfield" />
+							<li>
+								<label for="field_2">LRE Site</label>
+								<input type="text" name="txtField2" id="field_2" class="normal-textfield" />
+							</li>
+								<label for="field_2">LRE PMC</label>
+								<input type="text" name="txtField2" id="field_2" class="normal-textfield" />
+							<li>
+								<label for="field_2">Actual Cost</label>
+								<input type="text" name="txtField2" id="field_2" class="normal-textfield" />
+							</li>
+								<label for="field_2">Percentage Progress</label>
+								<input type="text" name="txtField2" id="field_2" class="normal-textfield" />
+							<li>
+								<input type="button" class="submit" value="Submit form" onClick="location.href='form_success.html';" />
+								<input type="button" class="submit reset" value="Reset form" onClick="location.href='form_error.html';" />
+							</li>
+						</ol>
+					</div>
+				</td>
+			</tr>
+			<tr class="odd">
+				<td><a href="#">Feb 2010</a></td>
+				<td>34</td>
+				<td>45</td>
+				<td>343</td>
+				<td>343</td>
+				<td>88</td>
+			</tr>
+			<tr>
+				<td><a href="#">Mar 2010</a></td>
+				<td>34</td>
+				<td>343</td>
+				<td>343</td>
+				<td>343</td>
+				<td>88</td>
+			</tr>
+		</table>
 	</div>
 </body>
 

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+
+<title>Some awesome title</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/reset.css" media="screen, projection">
+<link rel="stylesheet" href="css/site.css" media="screen, projection">
+
+<!-- Javascript -->
+<script src="js/jquery-1.4.3.min.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+<script src="js/selectivizr.js"></script>
+
+</head>
+
+<body>
+
+	<!--Header-->
+	<div class="header-container">
+		<img src="images/logo.png">
+	</div>
+
+	<div class="nav-container">
+		<div class="top-nav">
+			<ul class="nav">
+				<li class="selected"><a href="#">Dashboard</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Users</a></li>
+				<li><a href="#">Administration</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--Body-->
+	<div class="header-container">
+		<div class="project-select">
+				<p class="project-name">230 MW Thermal Power Plant</p>
+				<span class="project-location">Sikkim <img src="images/project-dropdown-arrow.png"/></span>
+		</div>
+		<!--
+		<div class="project-select">
+			<ul>
+				<li>Project Name</li>
+				<li>Project Name</li>
+				<li>Project Name</li>
+				<li>Project Name</li>
+				<li>Project Name</li>
+				<li>Project Name</li>
+				<li>Project Name</li>
+			</ul>
+		</div>
+		-->
+	</div>
+	<div class="container">
+		<h1>Project Dashboard <span class="menu-button"><a href="#" class="small blue gradient-button">Filter</a></span></h1>
+		<div class="filter-container">
+			<form>
+				<label>Date Range</label>
+				<input type="text" value="Sample">-
+				<input type="text" value="Sample">
+			</form>
+		</div>
+		<div class="report-container-2by3">
+			<h2>Contract Confidence</h2>
+			<div id="chartdiv" style="height:400px;width:300px; "></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+
+</html>
